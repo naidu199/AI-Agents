@@ -8,7 +8,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # Web Research Agent - General search
-web_agent = Agent(
+web_research_agent = Agent(
     name="web_research_agent",
     role="You are a web research agent that finds research papers.",
     model=Gemini(id="gemini-2.0-flash-exp"),
@@ -41,10 +41,10 @@ scholarly_arxiv_agent = Agent(
 )
 
 # Team of Agents - Runs both searches
-agent_team = Agent(
+research_agent = Agent(
     name="agent_team",
     model=Gemini(id="gemini-2.0-flash-exp"),
-    team=[web_agent, scholarly_arxiv_agent],
+    team=[web_research_agent, scholarly_arxiv_agent],
     instructions=[
         "1. Start by searching for general web information.",
         "2. Then fetch 10 research papers from Google Scholar and Arxiv.",
@@ -56,4 +56,4 @@ agent_team = Agent(
 )
 
 # Run the Agent
-agent_team.print_response("Give me tricky situations or problems that confuse human brain , like something based on psychology", stream=True)
+research_agent.print_response("Give me tricky situations or problems that confuse human brain , like something based on psychology", stream=True)
