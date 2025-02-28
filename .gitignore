@@ -1,0 +1,78 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+myenv/
+env/
+.env/
+.envrc
+venv.bak/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Environment files
+.env
+.env.local
+.env.development
+.env.production
+.env.test
+
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+*.manifest
+*.spec
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Logs and databases
+*.log
+*.sqlite3
+*.db
+*.csv
+
+# Unit test / coverage reports
+.coverage
+htmlcov/
+.tox/
+.nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+
+# PyInstaller
+*.spec
+*.exe
+*.dll
+*.dmg
+*.deb
+*.pkg
+*.so
+
+# MyPy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# IDE / Editor files
+.vscode/
+.idea/
+*.iml
+
+# macOS / Windows system files
+.DS_Store
+Thumbs.db
+
+# Docker
+*.dockerignore
+
+# PyCharm
+*.idea/
